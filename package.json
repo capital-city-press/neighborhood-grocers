@@ -1,0 +1,25 @@
+{
+  "name": "neighborhood-grocers",
+  "version": "1.0.0",
+  "description": "Neighborhood Grocers advertising project for The New Orleans Advocate.",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-sass": "^1.3.3",
+    "gulp-sourcemaps": "^1.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/capital-city-press/neighborhood-grocers.git"
+  },
+  "author": "Capital City Press Development Team <developers@theadvocate.com>",
+  "license": "Copyright (c) 2015 Capital City Press LLC. All rights reserved.",
+  "bugs": {
+    "url": "https://github.com/capital-city-press/neighborhood-grocers/issues"
+  },
+  "homepage": "https://github.com/capital-city-press/neighborhood-grocers"
+}
