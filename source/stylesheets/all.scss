@@ -1,5 +1,7 @@
+@import 'normalize';
+
 body {
-  background-image: url(../img/background.jpg);
+  background-image: url(/images/background.jpg);
   background-size: cover;
 }
 
@@ -27,7 +29,7 @@ body {
 }
 
 .noa__logo {
-  background-image: url(../img/noa-logo.svg);
+  background-image: url(/images/noa-logo.svg);
   right: 20px;
   bottom: 20px;
   width: 200px;
@@ -35,7 +37,7 @@ body {
 }
 
 .clip {
-  background-image: url(../img/dotted-line.svg);
+  background-image: url(/images/dotted-line.svg);
   background-size: auto 100%;
   left: 0;
   bottom: 0;
@@ -44,7 +46,7 @@ body {
 }
 
 .clip__scissors {
-  background-image: url(../img/scissors.svg);
+  background-image: url(/images/scissors.svg);
   background-position: left center;
   background-size: contain;
   margin-left: -200px;
@@ -55,7 +57,7 @@ body {
 }
 
 .grocers-logo {
-  background-image: url(../img/neighborhood-grocers.svg);
+  background-image: url(/images/neighborhood-grocers.svg);
   margin: 0 0 0 -175px;
   position: absolute;
   left: 50%;
@@ -66,7 +68,7 @@ body {
 }
 
 .tagline {
-  background-image: url(../img/view-ads.svg);
+  background-image: url(/images/view-ads.svg);
   background-size: auto 100%;
   position: absolute;
   left: 0;
@@ -86,7 +88,7 @@ body {
 }
 
 .grocers__item {
-  background-image: url(../img/bag.svg);
+  background-image: url(/images/bag.svg);
   background-size: 100% auto;
   float: left;
   margin-right: 10px;
@@ -110,9 +112,9 @@ body {
   overflow: hidden;
 }
 
-[data-grocer='rouses'] { background-image: url(../img/rouses.svg); }
-[data-grocer='winn-dixie'] { background-image: url(../img/winn-dixie.svg); }
-[data-grocer='robert'] { background-image: url(../img/robert.svg); }
-[data-grocer='lakeview'] { background-image: url(../img/lakeview.svg); }
-[data-grocer='zappardos'] { background-image: url(../img/zappardos.svg); }
-[data-grocer='labories'] { background-image: url(../img/labories.svg); }
+[data-grocer='rouses'] { background-image: url(/images/rouses.svg); }
+[data-grocer='winn-dixie'] { background-image: url(/images/winn-dixie.svg); }
+[data-grocer='robert'] { background-image: url(/images/robert.svg); }
+[data-grocer='lakeview'] { background-image: url(/images/lakeview.svg); }
+[data-grocer='zappardos'] { background-image: url(/images/zappardos.svg); }
+[data-grocer='labories'] { background-image: url(/images/labories.svg); }
