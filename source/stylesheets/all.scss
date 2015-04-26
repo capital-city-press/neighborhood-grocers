@@ -12,10 +12,10 @@ body {
 }
 
 .page {
+  overflow: hidden;
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 710px;
 }
 
 .noa-logo,
@@ -24,64 +24,48 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute;
   text-indent: -9999em;
 }
 
 .noa-logo {
+  background-color: rgba(255,255,255,0.9);
   background-image: url(../images/noa-logo.svg);
-  right: 20px;
-  top: 140px;
-  width: 200px;
-  height: 55px;
-  z-index: 9999;
+  background-size: auto 25px;
+  display: block;
+  width: 100%;
+  height: 35px;
 }
 
 .intro {
   background-image: url(../images/intro.png);
   background-position: center top;
   background-size: auto 100%;
-  height: 300px;
+  position: absolute;
+  height: 200px;
   width: 100%;
 }
 
 .grocers {
-  $width: 95%;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
   list-style: none;
-  margin: 0;
-  margin-left: -($width / 2);
+  margin: 220px auto 20px auto;
   padding: 0;
   overflow: hidden;
-  width: $width;
+  width: 300px;
 
   &__item {
     background-image: url(../images/bag.svg);
     background-size: 100% auto;
     float: left;
-    position: relative;
-    margin: 0 0.8% 0 0;
-    transition: margin 0.3s;
-    width: 16%;
-    height: 380px;
-    
-    &:last-child {
-      margin-right: 0;
-    }
-  
-    &:hover {
-      margin-top: 0;
-    }
+    margin: 0 10px 10px 0;
+    width: 140px;
+    height: 140px;
   }
 
   &__grocer {
-    position: absolute;
-    left: 5%;
-    top: 15%;
-    width: 84.5%;
-    height: 40%;
+    display: block;
+    margin: 20px 14px 10px 10px;
+    width: 113px;
+    height: 113px;
   }
 }
 
@@ -91,3 +75,71 @@ body {
 [data-grocer='lakeview'] { background-image: url(../images/logo-lakeview.png); }
 [data-grocer='zuppardos'] { background-image: url(../images/logo-zuppardos.png); }
 [data-grocer='labories'] { background-image: url(../images/logo-labories.png); }
+
+@media (min-width: 775px) {
+  .intro {
+    height: 300px;
+  }
+
+  .noa-logo {
+    background-color: transparent;
+    background-size: contain;
+    position: absolute;
+    right: 20px;
+    top: 140px;
+    width: 200px;
+    height: 55px;
+    z-index: 9999;
+  }
+
+  .grocers {
+    $width: 95%;
+    position: absolute;
+    left: 50%;
+    top: 370px;
+    margin-top: 0;
+    margin-left: -($width / 2);
+    width: $width;
+
+    &__item {
+      background-image: url(../images/bag.svg);
+      background-size: 100% auto;
+      float: left;
+      position: relative;
+      margin: 0 0.8% 0 0;
+      transition: margin 0.3s;
+      width: 16%;
+      height: 2000px;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    
+      &:hover {
+        margin-top: 0;
+      }
+    }
+
+    &__grocer {
+      margin: 0;
+      position: absolute;
+      left: 5%;
+      top: 0;
+      width: 84.5%;
+      height: 120px;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .grocers__grocer { height: 180px; }
+}
+
+@media (min-width: 1300px) {
+  .grocers__grocer { height: 240px; }
+}
+
+@media (min-width: 1500px) {
+  .grocers__grocer { height: 300px; }
+}
+
