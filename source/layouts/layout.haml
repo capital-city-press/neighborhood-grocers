@@ -10,26 +10,24 @@
     = stylesheet_link_tag 'all'
 
   %body
-    .noa
-      %a.noa__logo{href: 'http://theneworleansadvocate.com'} The New Orleans Advocate
-      .clip
-        .clip__scissors ✁
+    .page
+      %a.noa-logo{href: 'http://theneworleansadvocate.com'} The New Orleans Advocate
+      
+      .intro
+        %h1 Neighborhood Grocers
+        %h2 View this week’s grocery ads!
 
-    %h1.grocers-logo Neighborhood Grocers
-    
-    %h2.tagline View this week’s grocery ads!
-
-    %ul.grocers
-      %li.grocers__item
-        %a.grocers__grocer{data: {grocer: 'rouses'}, href: 'http://shop.rouses.com/storelocator.aspx'} Rouse’s
-      %li.grocers__item
-        %a.grocers__grocer{data: {grocer: 'winn-dixie'}, href: 'https://www.winndixie.com/Savings/WeeklyAds/default.aspx'} Winn-Dixie
-      %li.grocers__item
-        %a.grocers__grocer{data: {grocer: 'robert'}, href: 'http://www.robertfreshmarket.com/weekly-ad'} Robért Fresh Market
-      %li.grocers__item
-        %a.grocers__grocer{data: {grocer: 'lakeview'}, href: 'http://www.lakeviewgrocery.com/weekly-ad'} Lakeview Grocery
-      %li.grocers__item
-        %a.grocers__grocer{data: {grocer: 'zuppardos'}, href: 'http://zuppardos.com/weekly-specials/'} Zuppardo’s Family Supermarket
-      %li.grocers__item
-        %a.grocers__grocer{data: {grocer: 'labories'}, href: 'http://www.budgetsavercostplus.com/index.html'} Laborie’s Budget Saver
+      %ul.grocers
+        %li.grocers__item
+          %a.grocers__grocer{data: {grocer: 'rouses'}, href: 'http://shop.rouses.com/storelocator.aspx'} Rouse’s
+        %li.grocers__item
+          %a.grocers__grocer{data: {grocer: 'winn-dixie'}, href: 'https://www.winndixie.com/Savings/WeeklyAds/default.aspx'} Winn-Dixie
+        %li.grocers__item
+          %a.grocers__grocer{data: {grocer: 'robert'}, href: 'http://www.robertfreshmarket.com/weekly-ad'} Robért Fresh Market
+        %li.grocers__item
+          %a.grocers__grocer{data: {grocer: 'lakeview'}, href: 'http://www.lakeviewgrocery.com/weekly-ad'} Lakeview Grocery
+        %li.grocers__item
+          %a.grocers__grocer{data: {grocer: 'zuppardos'}, href: 'http://zuppardos.com/weekly-specials/'} Zuppardo’s Family Supermarket
+        %li.grocers__item
+          %a.grocers__grocer{data: {grocer: 'labories'}, href: 'http://www.budgetsavercostplus.com/index.html'} Laborie’s Budget Saver
 

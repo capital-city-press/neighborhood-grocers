@@ -1,120 +1,93 @@
 @import 'normalize';
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background-image: url(/images/background.jpg);
   background-size: cover;
 }
 
-.noa,
-.noa__logo,
-.clip,
-.clip__scissors,
-.grocers-logo,
-.tagline,
+.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 710px;
+}
+
+.noa-logo,
+.intro,
 .grocers__grocer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  text-indent: -100%;
+  text-indent: -9999em;
 }
 
-.noa {
-  background-color: rgba(255,255,255,0.4);
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 230px;
-  z-index: 1;
-}
-
-.noa__logo {
+.noa-logo {
   background-image: url(/images/noa-logo.svg);
   right: 20px;
-  bottom: 20px;
+  top: 140px;
   width: 200px;
   height: 55px;
+  z-index: 9999;
 }
 
-.clip {
-  background-image: url(/images/dotted-line.svg);
+.intro {
+  background-image: url(/images/intro.png);
+  background-position: center top;
   background-size: auto 100%;
-  left: 0;
-  bottom: 0;
+  height: 300px;
   width: 100%;
-  height: 4px;
-}
-
-.clip__scissors {
-  background-image: url(/images/scissors.svg);
-  background-position: left center;
-  background-size: contain;
-  margin-left: -200px;
-  left: 50%;
-  bottom: -8px;
-  width: 400px;
-  height: 20px;
-}
-
-.grocers-logo {
-  background-image: url(/images/neighborhood-grocers.svg);
-  margin: 0 0 0 -175px;
-  position: absolute;
-  left: 50%;
-  top: 20px;
-  width: 350px;
-  height: 270px;
-  z-index: 2;
-}
-
-.tagline {
-  background-image: url(/images/view-ads.svg);
-  background-size: auto 100%;
-  position: absolute;
-  left: 0;
-  top: 280px;
-  width: 100%;
-  height: 30px;
 }
 
 .grocers {
+  $width: 95%;
   position: absolute;
   left: 50%;
-  bottom: -40px;
+  bottom: 0;
   list-style: none;
-  margin: 0 0 0 -505px;
+  margin: 0;
+  margin-left: -($width / 2);
   padding: 0;
-  width: 1010px;
-}
-
-.grocers__item {
-  background-image: url(/images/bag.svg);
-  background-size: 100% auto;
-  float: left;
-  margin-right: 10px;
-  transition: margin 0.3s;
-  width: 160px;
-  height: 280px;
-}
-
-.grocers__item:last-child {
-  margin-right: 0;
-}
-
-.grocers__item:hover {
-  margin-top: -10px;
-}
-
-.grocers__grocer {
-  margin: 35px 20px 20px 15px;
-  width: 120px;
-  height: 120px;
   overflow: hidden;
+  width: $width;
+
+  &__item {
+    background-image: url(/images/bag.svg);
+    background-size: 100% auto;
+    float: left;
+    position: relative;
+    margin: 0 0.8% 0 0;
+    transition: margin 0.3s;
+    width: 16%;
+    height: 380px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  
+    &:hover {
+      margin-top: 0;
+    }
+  }
+
+  &__grocer {
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    width: 84.5%;
+    height: 40%;
+  }
 }
 
-[data-grocer='rouses'] { background-image: url(/images/rouses.svg); }
-[data-grocer='winn-dixie'] { background-image: url(/images/winn-dixie.svg); }
-[data-grocer='robert'] { background-image: url(/images/robert.svg); }
-[data-grocer='lakeview'] { background-image: url(/images/lakeview.svg); }
-[data-grocer='zappardos'] { background-image: url(/images/zappardos.svg); }
-[data-grocer='labories'] { background-image: url(/images/labories.svg); }
+[data-grocer='rouses'] { background-image: url(/images/logo-rouses.png); }
+[data-grocer='winn-dixie'] { background-image: url(/images/logo-winn-dixie.png); }
+[data-grocer='robert'] { background-image: url(/images/logo-robert.png); }
+[data-grocer='lakeview'] { background-image: url(/images/logo-lakeview.png); }
+[data-grocer='zuppardos'] { background-image: url(/images/logo-zuppardos.png); }
+[data-grocer='labories'] { background-image: url(/images/logo-labories.png); }
