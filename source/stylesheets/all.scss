@@ -109,13 +109,13 @@ body {
       position: relative;
       margin: 0 0.8% 0 0;
       transition: margin 0.3s;
-      width: 16%;
+      width: 13.6%;
       height: 2000px;
-      
+
       &:last-child {
         margin-right: 0;
       }
-    
+
       &:hover {
         margin-top: -20px;
       }
@@ -143,4 +143,3 @@ body {
 @media (min-width: 1500px) {
   .grocers__grocer { height: 300px; }
 }
-
